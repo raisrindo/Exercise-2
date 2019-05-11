@@ -1,0 +1,89 @@
+<!-- Exercise 2 : Membuat kalkulator sederhana, tidak boleh memakai fungsi -->
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Exercise 2 : Membuat Calculator Sederhana</title>
+        <link rel="stylesheet" type="text/css" href="srt/css/kalkulator.css">
+
+    </head>
+    
+    <body>
+
+    <div id = "heading">
+    <h1 title="Judul Exercise"> KALKULATOR SEDERHANA </h1>
+    </div>
+
+    <div class = angka1>
+    <p> Masukkan Operand Pertama : </p>
+    <input type="text" id="bilangan1"/>     
+    </div>
+
+    <div class = angka2>
+    <p> Masukkan Operand Kedua : </p>
+    <input type="text" id="bilangan2"/>         
+    </div>
+
+
+    <div class = operator>
+    <p> Pilih Operator : </p>
+        
+    <button id = "tambah" onclick=" 
+
+        var bil1, bil2, hasil ;
+        bil1 = Number(document.getElementById('bilangan1').value);
+        bil2 = Number(document.getElementById('bilangan2').value);
+        hasil = bil1 + bil2;
+        document.getElementById('result').innerHTML = hasil;
+        ">
+           Tambah (+)
+    </button>
+
+    <button id = "kurang" onclick=" 
+
+        var bil1, bil2, hasil ;
+        bil1 = Number(document.getElementById('bilangan1').value);
+        bil2 = Number(document.getElementById('bilangan2').value);
+        hasil = bil1 - bil2;
+        document.getElementById('result').innerHTML = hasil;
+        ">
+           Kurang (-)
+    </button>
+
+     <button id = "kali" onclick=" 
+
+        var bil1, bil2, hasil ;
+        bil1 = Number(document.getElementById('bilangan1').value);
+        bil2 = Number(document.getElementById('bilangan2').value);
+        hasil = bil1 * bil2;
+        document.getElementById('result').innerHTML = hasil;
+        ">
+           Kali (*)
+    </button>
+
+    <button id = "bagi" onclick=" 
+
+        var bil1, bil2, hasil ;
+        bil1 = Number(document.getElementById('bilangan1').value);
+        bil2 = Number(document.getElementById('bilangan2').value);
+        hasil = bil1 / bil2;
+        document.getElementById('result').innerHTML = hasil;
+        ">
+           Bagi (/)
+    </button>
+    </div>
+        
+    <div class = hasil>
+    <p> Hasil Perhitungan : </p>
+    <p id="result"> 0 </p>            
+    </div>
+
+
+
+    </body>
+
+</html>
+
